@@ -1,24 +1,26 @@
-const path = require('path');
+const path = require("path");
 
 // webpackの設定
 module.exports = {
   // エントリーポイントの設定
   entry: {
-    bundle: './src/index.ts'
+    bundle: "./src/index.ts", //srcディレクトリの中のindex.tsファイルがbundle.jsとして書き出される。
   },
   // outputはwebpackでバンドリした（一つにまとめた）ファイルをどこに出力するかの設定
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].js'
+    path: path.join(__dirname, "dist"),
+    filename: "[name].js",
   },
   // importやexportなどを使う時、拡張子がいるのかの設定
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: [".ts", ".js"],
   },
   // 開発用のサーバーの設定
   devServer: {
     // Webpack WebServerが参照するディレクトリの設定
-    contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
     // WebServerを立ち上げた時に、自動的にブラウザも立ち上げてくれるようにする設定
     open: true,
   },
@@ -28,8 +30,8 @@ module.exports = {
       {
         // ファイルの末尾が .ts で終わるファイルをts-loaderを使ってコンパイルしていくという設定
         loader: "ts-loader",
-        test: /\.ts$/
-      }
-    ]
-  }
-}
+        test: /\.ts$/,
+      },
+    ],
+  },
+};
