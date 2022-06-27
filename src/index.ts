@@ -6,6 +6,14 @@
 // world.sayHello(root);
 
 // 第3回基本の型定義
-import { primitiveSample } from './basic';
+import {
+  primitiveSample,
+  notExistSanple,
+  anySanple,
+  unknownSanple,
+} from './basic';
 
 primitiveSample();
+notExistSanple();
+anySanple();
+unknownSanple();
