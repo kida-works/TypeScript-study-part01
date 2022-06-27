@@ -5,7 +5,7 @@
 
 // world.sayHello(root);
 
-// 第3回基本の型定義
+// 03.基本の型定義
 import {
   primitiveSample,
   notExistSanple,
@@ -17,3 +17,7 @@ primitiveSample();
 notExistSanple();
 anySanple();
 unknownSanple();
+
+// 04.関数の方定義
+import { logMessage } from './function/basic';
+logMessage("Hello TypeScript!")
