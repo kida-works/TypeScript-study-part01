@@ -20,4 +20,8 @@ unknownSanple();
 
 // 04.関数の方定義
 import { logMessage } from './function/basic';
-logMessage("Hello TypeScript!")
+import { isUserSignedIn, isUserSignedIn2 } from './function/parameters';
+logMessage('Hello TypeScript!');
+isUserSignedIn('ABC', 'Torahack');
+isUserSignedIn('DEF');
+isUserSignedIn2('ABC');
