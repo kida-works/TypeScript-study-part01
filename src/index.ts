@@ -31,3 +31,7 @@ isUserSignedIn('DEF');
 isUserSignedIn2('ABC');
 const sum = sumProductsPrice(100, 200, 300, 400);
 console.log('Function parameters sample 4:', sum);
+
+// 05.オブジェクトの型定義
+import objectSample from './object/object';
+objectSample();

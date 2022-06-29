@@ -14,9 +14,11 @@ export const logMessage3 = function (message: string): void {
 };
 
 // アロー関数省略記法
+// ・void:return文を持たない関数の戻り値
 export const logMessage4 = (message: string): void =>
   console.log('Function basic sample 4:', message);
 
+// ・never:決して戻る事のない関数の戻り値
 export const alwaysThrowError = (message: string): never => {
   throw new Error(message);
 };
@@ -36,8 +38,7 @@ export const logMessage6: LogMessage = (message) => {
 // 完全な呼び出しシグネチャ
 type FullLogMessage = {
   (message: string): void;
-}
+};
 export const logMessage7: LogMessage = (message) => {
   console.log('Function basic sample 7:', message);
 };
-
