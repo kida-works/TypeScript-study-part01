@@ -40,4 +40,6 @@ typeAliasSample();
 
 // 06.配列とタプルの型定義
 import arraySample from './array/array';
+import tupleSample from './array/tuple';
 arraySample();
+tupleSample();
