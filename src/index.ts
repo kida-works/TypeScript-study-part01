@@ -43,3 +43,9 @@ import arraySample from './array/array';
 import tupleSample from './array/tuple';
 arraySample();
 tupleSample();
+
+// 07.ジェネリック型とポリフォーフィズム
+import genericsBasicSample from './generics/basic';
+import generateAdvancedSample from './generics/advanced';
+genericsBasicSample();
+generateAdvancedSample();
