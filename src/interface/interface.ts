@@ -76,15 +76,15 @@ class Comic implements Book {
   page: number;
   title: string;
 
-  constructer(page: number, title: string, private publishYear: string) {
+  constructor(page: number, title: string, private publishYear: string) {
     this.page = page;
     this.title = title;
   }
 
   getPublishYear() {
-    return this.title + 'が開発されたのは' + this.getPublishYear + '年です。';
+    return this.title + 'が開発されたのは' + this.publishYear + '年です。';
   }
 }
 
 const popularComic = new Comic(200, '鬼滅の刃', '2016');
-console.log(popularComic());
+console.log(popularComic.getPublishYear());
